@@ -1,7 +1,7 @@
 // DECLARATIVE
 
 pipeline {
-	agent { docker }
+	agent { docker  {} }
 	stages {
 		stage('Build') {
 			steps {
