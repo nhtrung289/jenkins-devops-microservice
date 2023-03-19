@@ -9,10 +9,14 @@ pipeline {
 			}
 		}
 		stage('Test') {
-			echo "Test"
+			step {
+				echo "Test"
+			}
 		}
 		stage('Intergration Test') {
+			step {
 			echo "Intergration Test"
+			}
 		}
 	}
 }
