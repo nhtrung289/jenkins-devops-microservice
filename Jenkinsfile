@@ -13,7 +13,7 @@ pipeline {
 			steps {
 				// sh "docker version"
 				// echo $env.PATH
-				echo $PATH
+				// echo $PATH
 				sh "mvn --version"
 				echo "Build"
 				echo "PATH - $PATH"
