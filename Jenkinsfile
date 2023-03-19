@@ -4,18 +4,18 @@ pipeline {
 	agent any
 	stages {
 		stage('Build') {
-			step {
+			steps {
 				echo "Build"
 			}
 		}
 		stage('Test') {
-			step {
+			steps {
 				echo "Test"
 			}
 		}
 		stage('Intergration Test') {
-			step {
-			echo "Intergration Test"
+			steps {
+				echo "Intergration Test"
 			}
 		}
 	}
