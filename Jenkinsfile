@@ -1,10 +1,11 @@
 // DECLARATIVE
 
 pipeline {
-	agent any
+	agent { docker }
 	stages {
 		stage('Build') {
 			steps {
+				sh "docker --version"
 				echo "Build"
 			}
 		}
