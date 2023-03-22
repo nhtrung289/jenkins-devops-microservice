@@ -14,12 +14,13 @@
 
 // DECLARATIVE
 pipeline {
-	agent { docker  {} }
+	agent { docker  { image 'maven:3.6.6'} }
 	// agent any
 	stages {
 		stage('Build') {
 			steps {
 				sh "docker --version"
+                echo "mvm --version"
 				echo "Build"
 			}
 		}
