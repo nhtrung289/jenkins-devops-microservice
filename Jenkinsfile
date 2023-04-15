@@ -1,17 +1,3 @@
-// node {  
-//     stage('Build') { 
-//         echo "BUILD"
-//         sh "pwd"
-//         sh "ls"
-//     }
-//     stage('Test') { 
-//         echo "TEST"
-//     }
-//     stage('Deploy') { 
-//         echo "Deploy"
-//     }
-// }
-
 // DECLARATIVE
 pipeline {
 	agent { docker  { image 'maven:3.6.3'} }
@@ -38,7 +24,6 @@ pipeline {
 	}
 	post {
 			always {
-				echo $USER
 				echo 'Im awesome. I run always'
 			}
 			success {
