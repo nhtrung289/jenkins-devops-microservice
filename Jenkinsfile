@@ -33,7 +33,8 @@ pipeline {
 			steps {
 				echo "Intergration Test"
 			}
-		} 
+		}
+
 		post {
 			always {
 				echo 'Im awesome. I run always'
