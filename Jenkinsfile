@@ -38,6 +38,7 @@ pipeline {
 	}
 	post {
 			always {
+				echo $USER
 				echo 'Im awesome. I run always'
 			}
 			success {
