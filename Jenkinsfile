@@ -20,6 +20,7 @@ pipeline {
 		stage('Build') {
 			steps {
 				// sh "docker --version"
+				echo $USER
                 sh 'mvm --version'
 				echo "Build"
 			}
